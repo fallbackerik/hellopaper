@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: run pandoc
-        run: "pandoc --verbose --filter pandoc-citeproc --bibliography=sources.bib -f markdown -t html5 README.md"
+        run: "pandoc --verbose --filter pandoc-citeproc --bibliography=sources.bib -f markdown -t html5 README.md -o index.html"
       - name: show dir contents
         run: ls -al
   upload-pages:
