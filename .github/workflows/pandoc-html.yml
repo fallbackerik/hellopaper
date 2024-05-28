@@ -18,6 +18,7 @@ jobs:
         run: ls -al
       - uses: actions/upload-artifact@v4
         with:
+          path: '.'
           name: index.html
           if-no-files-found: error
           retention-days: 1
