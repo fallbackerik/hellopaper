@@ -15,7 +15,7 @@ jobs:
       - name: pandoc help
         run: "pandoc --help"
       - name: run pandoc
-        run: "pandoc --filter pandoc-citeproc --bibliography=sources.bib -f markdown -t html5"
+        run: "pandoc --verbose --filter pandoc-citeproc --bibliography=sources.bib -f markdown -t html5"
       - name: show dir contents
         run: ls -al
   upload-pages:
