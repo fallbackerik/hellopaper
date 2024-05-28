@@ -1,5 +1,5 @@
 name: Use Pandoc to generate static HTML from provided markdown
-on: [push]
+on: [push, workflow_dispatch]
 
 permissions:
   contents: read
