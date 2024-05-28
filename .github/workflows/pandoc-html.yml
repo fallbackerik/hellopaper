@@ -15,7 +15,7 @@ jobs:
       - name: pandoc help
         run: "--help"
       - name: run pandoc
-        run: "--filter pandoc-citeproc --bibliography sources.bib -f markdown -t html5"
+        run: "--filter pandoc-citeproc --bibliography=sources.bib -f markdown -t html5"
       - name: upload artifacts
         uses: actions/upload-pages-artifact@v3
         with:
