@@ -11,7 +11,7 @@ Lorem ipsum [dolor](./dolor.md) sit amet, consectetur adipiscing elit, sed do ei
 +------+--------+
 | Test | Number |
 +======+========+
-| Hello | 1 |
+| Hello | 1     |
 | World | 2     |
 +-------+-------+
 
