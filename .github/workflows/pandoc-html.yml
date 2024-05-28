@@ -16,10 +16,14 @@ jobs:
         run: "pandoc --help"
       - name: run pandoc
         run: "pandoc --filter pandoc-citeproc --bibliography=sources.bib -f markdown -t html5"
+      - name: show dir contents
+        run: ls -al
   upload-pages:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: show dir contents
+        run: ls -al
       - name: upload artifacts
         uses: actions/upload-pages-artifact@v3
         with:
