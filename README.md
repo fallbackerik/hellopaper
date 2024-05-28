@@ -6,4 +6,22 @@ Lorem ipsum [dolor](./dolor.md) sit amet, consectetur adipiscing elit, sed do ei
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi - @StanitsasMariosFstt
 
+![image1](image.svg]
+
++------+--------+
+| Test | Number |
++======+========+
+| Hello | 1 |
+| World | 2     |
++-------+-------+
+
+: A caption
+
+$$1 + 1 = 3$$
+
+```python
+
+import this
+```
+
 ## Bibliography
