@@ -12,6 +12,8 @@ jobs:
     container: pandoc/core:2.9
     steps:
       - uses: actions/checkout@v4
+      - name: pandoc help
+        run: "--help"
       - name: run pandoc
         run: "--filter pandoc-citeproc --bibliography sources.bib -f markdown -t html5"
       - name: upload artifacts
