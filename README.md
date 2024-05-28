@@ -15,7 +15,8 @@ Additionally, it helped at building a database of 77 existing games that were co
 
 ## Introduction
 
-TODO
+There are many areas in which our world needs us to change our ways. Educative games can help by increasing engagement with learning
+topics and allowing the players to engage with the topic interactively during learning.
 
 ## Research Method
 
