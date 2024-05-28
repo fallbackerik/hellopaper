@@ -9,10 +9,11 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: pandoc/core:2.9
     steps:
       - uses: actions/checkout@v4
-      - uses: docker://pandoc/core:2.9
-          with: "--citeproc --bibliography sources.bib -f markdown -t html5"
+      - name: run pandoc
+        run: "--citeproc --bibliography sources.bib -f markdown -t html5"
       - name: upload artifacts
         uses: actions/upload-pages-artifact@v3
         with:
