@@ -1,0 +1,26 @@
+name: Use Pandoc to generate static HTML from provided markdown
+on: [push]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker://pandoc/core:2.9
+          with: >-
+            --citeproc
+            --bibliography sources.bib
+            -f markdown
+            -t html5
+      - name: upload artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - name: deploy to github pages
+        id: deployment
+        uses: actions/deploy-pages@v4
