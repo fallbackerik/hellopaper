@@ -12,10 +12,8 @@ jobs:
     container: pandoc/core:2.9
     steps:
       - uses: actions/checkout@v4
-      - name: pandoc help
-        run: "pandoc --help"
       - name: run pandoc
-        run: "pandoc --verbose --filter pandoc-citeproc --bibliography=sources.bib -f markdown -t html5"
+        run: "pandoc --verbose --filter pandoc-citeproc --bibliography=sources.bib -f markdown -t html5 README.md"
       - name: show dir contents
         run: ls -al
   upload-pages:
