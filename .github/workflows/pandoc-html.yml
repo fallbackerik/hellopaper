@@ -17,7 +17,7 @@ jobs:
       - uses: reitzig/actions-asciidoctor@v2.0.1
         with:
           version: 2.0.18
-      - run: asciidoctor --version
+      - run: asciidoctor --help
       - name: show dir contents
         run: ls -al
       - name: upload artifacts
