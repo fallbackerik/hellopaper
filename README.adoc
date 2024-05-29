@@ -1,7 +1,7 @@
 = Literature Review: Learning by playing Videogames
 //Settings:
 :icons: font
-:bibtex-style: harvard-institut-fur-praxisforschung-de
+:bibtex-style: harvard-gesellschaft-fur-bildung-und-forschung-in-europa
 :toc:
 
 == Abstract
