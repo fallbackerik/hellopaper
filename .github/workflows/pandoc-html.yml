@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: apt search pango
+      - run: apt install -y libpango1.0-dev
       - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
