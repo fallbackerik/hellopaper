@@ -10,6 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - run: apt search pango
       - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
