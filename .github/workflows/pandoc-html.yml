@@ -10,6 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - run: sudo apt search webp
       - run: sudo apt install -y libpango1.0-dev
       - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
