@@ -9,27 +9,12 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: pandoc/core:2.9
     steps:
       - uses: actions/checkout@v4
       - uses: mougenko/asciidoc-to-html@v1.0.0
         with:
           src: README.adoc
           dest: index.html
-      - name: show dir contents
-        run: ls -al
-      - uses: actions/upload-artifact@v4
-        with:
-          path: '.'
-          name: index.html
-          if-no-files-found: error
-          retention-days: 1
-          overwrite: true
-  upload-pages:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - uses: actions/download-artifact@v4
       - name: show dir contents
         run: ls -al
       - name: upload artifacts
