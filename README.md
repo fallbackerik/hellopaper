@@ -10,7 +10,7 @@ By analysing existing research, this paper wants to find out:
  4. and what open questions exist in this field of study.
 
 This paper will be continuously updated to give an overview during the process of creation of the document.
-Currently, 1 paper was looked at, @StanitsasMariosFstt. It was used to find one scientific method: the scientific literature review.
+Currently, 1 paper was looked at, [@StanitsasMariosFstt][StanitsasMariosFstt]. It was used to find one scientific method: the scientific literature review.
 Additionally, it helped at building a database of 77 existing games that were considered educative.
 
 ## Introduction
