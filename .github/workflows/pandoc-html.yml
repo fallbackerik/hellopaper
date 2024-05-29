@@ -19,7 +19,7 @@ jobs:
       - uses: fallbackerik/actions-asciidoctor@v2.0.1-erik2
         with:
           version: 2.0.18
-      - run: asciidoctor *.adoc -o index.html
+      - run: asciidoctor -r asciidoctor-bibtex asciidoctor-mathematical *.adoc -o index.html
       - name: show dir contents
         run: ls -al
       - name: upload artifacts
